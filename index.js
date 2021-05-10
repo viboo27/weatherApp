@@ -45,20 +45,20 @@ function showWeatherReport(weather){
 	let weather_condiditon = document.getElementById('weather');
 	weather_condiditon.innerHTML = `${weather.weather[0].description}`;
 
-	//let date = document.getElementById('date');
+	let date = document.getElementById('date');
 
-	//let todayDate = new Date();
+	let todayDate = new Date();
 
-	//date.innerText = dateManage(todayDate); 
+	date.innerText = dateManage(todayDate); 
 
 }
 
 //date manage
-/*
-function dateManage(dateArg){
-	let days = {"Monday","Tuesday","Wednesday","Thursday","Friday","Saturady","Sunday"};
 
-	let months = {"January","February","March","April","May","June","July","August","September","October","November","December"};
+function dateManage(dateArg){
+	let days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturady","Sunday"];
+
+	let months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
 	let year = dateArg.getFullYear();
 	let month = months[dateArg.getMonth()];
